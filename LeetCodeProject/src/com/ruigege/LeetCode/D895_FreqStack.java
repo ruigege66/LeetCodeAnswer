@@ -26,10 +26,9 @@ public class D895_FreqStack {
         if (f > maxfreq)
             maxfreq = f;
 
+        
         group.computeIfAbsent(f, z-> new Stack()).push(x);
     }
-
-    
     
     public int pop() {
         int x = group.get(maxfreq).pop();
