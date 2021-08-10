@@ -25,8 +25,6 @@ public class D895_FreqStack {
         freq.put(x, f);
         if (f > maxfreq)
             maxfreq = f;
-
-        
         group.computeIfAbsent(f, z-> new Stack()).push(x);
     }
     
